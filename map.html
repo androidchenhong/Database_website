@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<head>
+
+<title>InSaini World</title>
+
+<link type="text/css" rel="stylesheet" href="stylesheet.css"></link>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+ 
+ 
+ 
+ <style>
+     
+
+ body {
+    background-image:url(images/rollercoaster.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:0px 50px;
+    background-color: #73d6ff;
+    margin:0px;
+}
+
+#active {
+     background-color: #f9be02;
+     float:right;
+}
+
+
+     
+     
+</style>
+ 
+ 
+ 
+ 
+</head>
+<body>
+ 
+ <div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-google-plus"></i></a> 
+  <a class="active1" href="#"><i class="fa fa-facebook"></i></a> 
+  <a class="active2" href="#"><i class="fa fa-twitter"></i></a>
+  <a href="map.html" id="active"><i class="fa fa-map-o" aria-hidden="true"></i></a>
+</div>
+ 
+
+<ul class="menu">
+    <img src="images/panda_logo_good.png" id="logo" align="center">
+    <li class="menu">
+    <li><a href="information.html">Information</a></li>
+    <li class="menu"><a href="attractions.html">Attractions</a></li>
+    <li class="menu"><a href="shop.html">Shop</a></li>
+    <li class="menu"><a href="food.html">Food</a></li>
+    <li class="menu"><a href="rides.html">Rides</a></li>
+    <li class="menu"><a href="index.html">Home</a></li>
+  
+</ul>
+
+     <div id="map" style="width:100%; height:700px;"></div>
+					<script>
+    					function myMap() {
+    					  var mapCanvas = document.getElementById("map");
+    					  var mapOptions = {
+    						center: new google.maps.LatLng( 33.770819, -84.551607), 
+    						zoom: 21,
+    						mapTypeId: 'satellite'
+    					  }
+    					  var map = new google.maps.Map(mapCanvas, mapOptions);
+    					}
+					</script>
+			  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvVMuqyO4cxRfcUDdMCprIPSZLwcgGXSQ&callback=myMap"></script>
+
+
+
+
+</body>
+
+
+
+</html>
